@@ -1,11 +1,15 @@
 # pages/3_Box-Plot.py
-import sys, os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import sys
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parents[1]
+sys.path.append(str(ROOT_DIR))
+
+
 import streamlit as st
 from src.cleaning import load_data 
 from src.sidebar import show_global_slicers
 from src.plotting import generate_boxplot
-
 
 # ---------- guarantee data ----------
 if "df" not in st.session_state:
