@@ -1,10 +1,4 @@
-# streamlit==1.29.0
-# pandas==2.3.3
-# numpy==2.3.5
-# plotly==6.0.0
-# pathlib==1.0.1
 streamlit==1.29.0
-pandas==2.3.3          # يعمل مع numpy<2
-numpy==1.25.2           # أي نسخة أقل من 2، Streamlit يتوافق معها
+pandas==2.3.3
+numpy==1.25.2
 plotly==6.0.0
-pathlib==1.0.1
