@@ -90,3 +90,13 @@ def generate_line_plot(data, tokens):
     
     fig.update_layout(title=title, xaxis_title="Date", yaxis_title=_y)
     return _update_layout(fig)
+
+# ---------- 4. Box ----------
+def generate_boxplot(data, _by=None):
+    if _by is None:
+        _by = ['Views', 'Likes', 'Dislikes', 'Comments']
+    fig = px.box(data, y=_by, template="plotly_white",
+                 color_discrete_sequence=DARK_SEQUENTIAL)
+    fig.update_layout(title="Distribution of Key Metrics",
+                      xaxis_title="Metric", yaxis_title="Values")
+    return _update_layout(fig)
