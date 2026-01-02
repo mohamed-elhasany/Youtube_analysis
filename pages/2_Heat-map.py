@@ -15,7 +15,7 @@ group = "Categories"   # <--  hard-lock
 st.sidebar.markdown("🔒 **Heat-map locked to** `Categories`  (channels too heavy)")
 
 grp_col = "Category_Title"
-top = sort == "Ascending"
+top = sort == "Descending"
 
 
 st.title("🔥 Heat-map – Intensity Grid")

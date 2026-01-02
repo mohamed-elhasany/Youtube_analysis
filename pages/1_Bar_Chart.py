@@ -11,7 +11,7 @@ if "df" not in st.session_state:
 
 # sidebar
 metric, group, sort, _ = show_global_slicers()
-top = sort == "Ascending"          # ← local variable, NOT st.session_state.sort
+top = sort == "Descending"          # ← local variable, NOT st.session_state.sort
 
 st.title("📊 Bar Chart – Top / Bottom Performers")
 st.divider()
